@@ -11,6 +11,7 @@ flask user create-student <username> <password> <first_name> <last_name> <email>
 
 Create a staff member:
 flask user create-staff <username> <password> <first_name> <last_name> <email>
+
 Create an employer:
 flask user create-employer <username> <password> <company_name> <company_info> <email>
 
