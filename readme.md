@@ -1,5 +1,27 @@
 ![Tests](https://github.com/uwidcit/flaskmvc/actions/workflows/dev.yml/badge.svg)
 
+# CLI COMMANDS
+
+1. Create Users
+flask user create <username> <password> <role>
+
+Create a student:
+flask user create-student <username> <password> <first_name> <last_name> <email>
+Create a staff member:
+flask user create-staff <username> <password> <first_name> <last_name> <email>
+Create an employer:
+flask user create-employer <username> <password> <company_name> <company_info> <email>
+
+2. List Users
+flask user list
+
+3. Login
+flask user login <username> <password>
+
+4. Internship Position (Employer Only)
+flask user create-position <title>
+
+
 # Flask MVC Template
 A template for flask applications structured in the Model View Controller pattern [Demo](https://dcit-flaskmvc.herokuapp.com/). [Postman Collection](https://documenter.getpostman.com/view/583570/2s83zcTnEJ)
 
