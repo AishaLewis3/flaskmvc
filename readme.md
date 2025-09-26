@@ -2,7 +2,7 @@
 
 # CLI COMMANDS
 
-1. Create Users
+1. Create Users -
 flask user create <username> <password> <role>
 
 Create a student:
@@ -14,13 +14,13 @@ flask user create-staff <username> <password> <first_name> <last_name> <email>
 Create an employer:
 flask user create-employer <username> <password> <company_name> <company_info> <email>
 
-2. List Users
+2. List Users -
 flask user list
 
-3. Login
+3. Login -
 flask user login <username> <password>
 
-4. Internship Position (Employer Only)
+4. Internship Position (Employer Only) -
 flask user create-position <title>
 
 
