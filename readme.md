@@ -6,7 +6,6 @@
 flask user create <username> <password> <role>
 
 Create a student:
-
 flask user create-student <username> <password> <first_name> <last_name> <email>
 
 Create a staff member:
