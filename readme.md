@@ -2,6 +2,11 @@
 
 # CLI COMMANDS
 
+First Steps:
+a. Environment - venv\Scripts\activate
+b. Database - flask init
+c. ...
+
 1. Create Users -
 flask user create <username> <password> <role>
 
