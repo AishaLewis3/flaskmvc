@@ -2,32 +2,32 @@
 
 # CLI COMMANDS
 
-First Steps:
-a. Environment - venv\Scripts\activate
-b. Database - flask init
-c. ...
+# 1. Setup
+flask init
+flask user create student1 s_pass student
+flask user create staff1 t_pass staff
+flask user create employer1 e_pass employer
+flask user add-skills student1 "Python, Flask, SQL"
 
-1. Create Users -
-flask user create <username> <password> <role>
+# 2. Employer creates positions
+flask user login employer1 e_pass
+flask user create-position "Backend Developer"
 
-Create a student:
-flask user create-student <username> <password> <first_name> <last_name> <email>
+# 3. Staff shortlists students
+flask user login staff1 t_pass
+flask user shortlist-by-skills 1 "Python,SQL"
 
-Create a staff member:
-flask user create-staff <username> <password> <first_name> <last_name> <email>
+# 4. Employer reviews applications
+flask user login employer1 e_pass
+flask user view-position-shortlists
+flask user update-shortlist-status 1 accepted
 
-Create an employer:
-flask user create-employer <username> <password> <company_name> <company_info> <email>
+# 5. Student checks status
+flask user login student1 s_pass
+flask user view-my-shortlists
 
-2. List Users -
-flask user list
-
-3. Login -
-flask user login <username> <password>
-
-4. Internship Position (Employer Only) -
-flask user create-position <title>
-
+# 6. Run application
+flask run
 
 # Flask MVC Template
 A template for flask applications structured in the Model View Controller pattern [Demo](https://dcit-flaskmvc.herokuapp.com/). [Postman Collection](https://documenter.getpostman.com/view/583570/2s83zcTnEJ)
